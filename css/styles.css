@@ -1,0 +1,4 @@
+/*These are the id's that we want to start the page with hidden*/
+#over-30, #under-30, #exact-30, #giraffe-info, #bear-info, #lion-info, #zebra-info, #dolphin-info, #falcon-info {
+  display: none;
+}
