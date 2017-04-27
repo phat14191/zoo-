@@ -1,21 +1,4 @@
 //Back End Logic
-var time_spent = function(time) {
-  //if over 30
- if (time > 30) {
-   $("#over-30").show();
-   $("#exact-30").show();
-   $("#under-30").show();
- }
- //if exactly 30
- else if (time === 30) {
-   $("#exact-30").show();
-   $("#under-30").show();
- }
- //if under 30
- else {
-   $("#under-30").show();
- }
-};
 
 
 
@@ -57,5 +40,19 @@ $(document).ready(function() {
 
   //prompts user for time, stores time in variable, calls time_spent function.
   var time = parseInt(prompt("How much time do you have? (in minutes)"));
-  var exhibits_seen = time_spent(time);
+    //if over 30
+   if (time > 30) {
+     $("#over-30").show();
+     $("#exact-30").show();
+     $("#under-30").show();
+   }
+   //if exactly 30
+   else if (time === 30) {
+     $("#exact-30").show();
+     $("#under-30").show();
+   }
+   //if under 30
+   else {
+     $("#under-30").show();
+   }
 });
