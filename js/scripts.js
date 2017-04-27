@@ -23,28 +23,36 @@ var time_spent = function(time) {
 $(document).ready(function() {
   //click each photo for slide information
   $("#giraffe").click(function(){
-    //when img is clicked, p is toggled
-      $("#giraffe-info").slideToggle();
+      //when img is clicked, h2 is toggled
+      $("#giraffe-info").slideToggle()
+      //when this img is clickeed, hide all other -info's
+      $("h2#giraffe-info").siblings("h2").hide();
+
   });
 
   $("#bear").click(function(){
     $("#bear-info").slideToggle();
+    $("h2#bear-info").siblings("h2").hide();
   });
 
   $("#lion").click(function(){
     $("#lion-info").slideToggle();
+    $("h2#lion-info").siblings("h2").hide();
   });
 
   $("#zebra").click(function(){
     $("#zebra-info").slideToggle();
+    $("h2#zebra-info").siblings("h2").hide();
   });
 
   $("#dolphin").click(function(){
     $("#dolphin-info").slideToggle();
+    $("h2#dolphin-info").siblings("h2").hide();
   });
 
   $("#falcon").click(function(){
     $("#falcon-info").slideToggle();
+    $("h2#falcon-info").siblings("h2").hide();
   });
 
   //prompts user for time, stores time in variable, calls time_spent function.
